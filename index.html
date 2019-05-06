@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1>EXEMPLO</h1> -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="card" id="main">
+            <!--.card#main then TAB-->
+            <div class="card-content">
+              <span class="card-title"> TASK LIST </span>
+              <!--span.card-title-->
+              <div class="row">
+                <form id="task-form">
+                  <!--form#task-form-->
+                  <div id="input-field col s12">
+                    <label for="task">New Task</label>
+                    <input
+                      type="text"
+                      name="task"
+                      id="task"
+                      placeholder="New Task"
+                    />
+                  </div>
+                  <input type="submit" value="Add Task" class="btn" />
+                </form>
+              </div>
+              <div class="card-action">
+                <h5 id="task-title">Task</h5>
+                <div id="input-field col s12" >
+                    <input
+                      type="text"
+                      name="filter"
+                      id="filter"
+                      placeholder="Filter Task"
+                      onkeypress="filterFunction()"
+                    />
+                <ul class="collection" id="listUl">
+                  <!-- AQUI VA LA LISTA-->
+                </ul>
+                <a
+                  href=""
+                  class="clear-task btn "
+                  style="background-color:darkred"
+                  >Clear Task</a
+                >
+                <!--a.clear-task.btn.black-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- JQUERRY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
